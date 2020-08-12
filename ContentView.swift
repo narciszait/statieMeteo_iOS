@@ -9,6 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var masuratoriVM = MeteoListViewModel()
+    
+    init() {
+        self.masuratoriVM.fetchAllNewMeteo()
+    }
+    
     var body: some View {
         Text("Hello, World!")
     }
