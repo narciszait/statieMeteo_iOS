@@ -11,7 +11,7 @@ import SwiftUI
 struct TitleModifier: ViewModifier {
     func body(content: Content) -> some View {
         return content
-            .font(.system(.title, design: .rounded))
+            .font(.system(.subheadline, design: .rounded))
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 15)

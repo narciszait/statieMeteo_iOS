@@ -19,9 +19,14 @@ struct MasuratoareListView: View {
     }
     
     var body: some View {
-        List(masuratoriVM.masuratori, id: \.meteoId) { masuratoare in
-            MasuratoareRow(masuratoare: masuratoare)
-        }.padding(.horizontal, -20)
+        ZStack {
+            Color(red: 0.09, green: 0.11, blue: 0.15)
+            .edgesIgnoringSafeArea(.all)
+            
+            List(masuratoriVM.masuratori, id: \.meteoId) { masuratoare in
+                MasuratoareRow(masuratoare: masuratoare)
+            }.padding(.horizontal, -20)
+        }
     }
 }
 

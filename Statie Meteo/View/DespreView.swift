@@ -20,7 +20,7 @@ struct DespreView: View {
                 Spacer()
                 Text("Datele sunt transmise de la o placa Arduino, dotata cu senzori si o placa de retea WiFi.\nPlaca Arduino transmite la fiecare 10 minutes masuratorile inregistrate de senzori unui server nodeJS, conectat la o baza de date MongoDB.\nAplicatia curenta de aici isi ia informatiile pe care le arata sub forma de tabel")
                 .font(.system(.subheadline, design: .monospaced))
-                .padding(8)
+                .padding(20)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 0.5)
@@ -32,7 +32,13 @@ struct DespreView: View {
                     self.trebuieSaPrezint.toggle()
                 }) {
                     Text("Inchide")
-                    .modifier(TitleModifier())
+                        .font(.system(.subheadline, design: .rounded))
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(lineWidth: 1)
+                        )
+                        .foregroundColor(.white)
                 }
             }
         }  

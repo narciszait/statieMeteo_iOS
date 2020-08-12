@@ -155,6 +155,8 @@
 			dependencies = (
 			);
 			name = "Statie Meteo";
+			packageProductDependencies = (
+			);
 			productName = "Statie Meteo";
 			productReference = B3BC225E24E468DD007FC6A7 /* Statie Meteo.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +185,8 @@
 				Base,
 			);
 			mainGroup = B3BC225524E468DD007FC6A7;
+			packageReferences = (
+			);
 			productRefGroup = B3BC225F24E468DD007FC6A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

@@ -30,7 +30,13 @@ struct ContentView: View {
                     self.trebuieSaPrezint.toggle()
                 }) {
                     Text("Despre")
-                    .modifier(TitleModifier())
+                        .font(.system(.subheadline, design: .rounded))
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 15)
+                                .stroke(lineWidth: 1)
+                        )
+                        .foregroundColor(.white)
                 }.sheet(isPresented: $trebuieSaPrezint) {
                     DespreView(trebuieSaPrezint: self.$trebuieSaPrezint)
                 }
