@@ -16,14 +16,14 @@ struct MasuratoareViewModel {
     }
     
     var meteoId: String {
-        return self.masuratoare.meteoId ?? "No id"
+        return self.masuratoare.meteoId
     }
     
     var temperatura: String {
-        return self.masuratoare.temperatura ?? "No temperatura"
+        return self.masuratoare.temperatura
     }
     
     var umiditate: String {
-        return self.masuratoare.umiditate ?? "No umiditate"
+        return self.masuratoare.umiditate
     }
 }

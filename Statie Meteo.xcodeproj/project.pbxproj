@@ -17,6 +17,10 @@
 		B3BC227B24E46A4E007FC6A7 /* Meteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC227A24E46A4E007FC6A7 /* Meteo.swift */; };
 		B3BC227D24E46ECC007FC6A7 /* MeteoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC227C24E46ECC007FC6A7 /* MeteoListViewModel.swift */; };
 		B3BC227F24E46F0F007FC6A7 /* MasuratoareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC227E24E46F0F007FC6A7 /* MasuratoareViewModel.swift */; };
+		ECDE244324E47ADC0010AEB9 /* MasuratoareListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE244224E47ADC0010AEB9 /* MasuratoareListView.swift */; };
+		ECDE244624E48CAA0010AEB9 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE244524E48CAA0010AEB9 /* TitleModifier.swift */; };
+		ECDE244824E493720010AEB9 /* DespreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE244724E493720010AEB9 /* DespreView.swift */; };
+		ECDE244A24E49C710010AEB9 /* MasuratoareRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE244924E49C710010AEB9 /* MasuratoareRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		B3BC227A24E46A4E007FC6A7 /* Meteo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteo.swift; sourceTree = "<group>"; };
 		B3BC227C24E46ECC007FC6A7 /* MeteoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoListViewModel.swift; sourceTree = "<group>"; };
 		B3BC227E24E46F0F007FC6A7 /* MasuratoareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasuratoareViewModel.swift; sourceTree = "<group>"; };
+		ECDE244224E47ADC0010AEB9 /* MasuratoareListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasuratoareListView.swift; sourceTree = "<group>"; };
+		ECDE244524E48CAA0010AEB9 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		ECDE244724E493720010AEB9 /* DespreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DespreView.swift; sourceTree = "<group>"; };
+		ECDE244924E49C710010AEB9 /* MasuratoareRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasuratoareRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,8 @@
 		B3BC226024E468DD007FC6A7 /* Statie Meteo */ = {
 			isa = PBXGroup;
 			children = (
+				ECDE244424E48C930010AEB9 /* Modifiers */,
+				ECDE244124E47AC70010AEB9 /* View */,
 				B3BC227924E46A30007FC6A7 /* ViewModel */,
 				B3BC227824E46A2A007FC6A7 /* Model */,
 				B3BC227524E46A0A007FC6A7 /* Network Manager */,
@@ -109,6 +119,24 @@
 				B3BC227E24E46F0F007FC6A7 /* MasuratoareViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECDE244124E47AC70010AEB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE244224E47ADC0010AEB9 /* MasuratoareListView.swift */,
+				ECDE244724E493720010AEB9 /* DespreView.swift */,
+				ECDE244924E49C710010AEB9 /* MasuratoareRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECDE244424E48C930010AEB9 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE244524E48CAA0010AEB9 /* TitleModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDE244324E47ADC0010AEB9 /* MasuratoareListView.swift in Sources */,
 				B3BC227724E46A1D007FC6A7 /* NetworkManager.swift in Sources */,
 				B3BC227D24E46ECC007FC6A7 /* MeteoListViewModel.swift in Sources */,
+				ECDE244624E48CAA0010AEB9 /* TitleModifier.swift in Sources */,
 				B3BC227F24E46F0F007FC6A7 /* MasuratoareViewModel.swift in Sources */,
+				ECDE244824E493720010AEB9 /* DespreView.swift in Sources */,
+				ECDE244A24E49C710010AEB9 /* MasuratoareRow.swift in Sources */,
 				B3BC226224E468DD007FC6A7 /* AppDelegate.swift in Sources */,
 				B3BC226424E468DD007FC6A7 /* SceneDelegate.swift in Sources */,
 				B3BC226624E468DD007FC6A7 /* ContentView.swift in Sources */,
